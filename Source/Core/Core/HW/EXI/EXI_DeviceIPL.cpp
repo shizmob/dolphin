@@ -393,7 +393,7 @@ void CEXIIPL::TransferByte(u8& data)
     }
     else
     {
-      NOTICE_LOG_FMT(EXPANSIONINTERFACE, "IPL-DEV Accessing unknown device");
+      NOTICE_LOG_FMT(EXPANSIONINTERFACE, "IPL-DEV Accessing unknown device at {:08x}", address);
     }
 
 #undef DEV_ADDR_CURSOR
