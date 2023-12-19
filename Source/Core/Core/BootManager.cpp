@@ -118,6 +118,7 @@ bool BootCore(std::unique_ptr<BootParameters> boot, const WindowSystemInfo& wsi)
           Config::SetCurrent(Config::SYSCONF_COUNTRY, 0x01);  // Japan
           break;
         case DiscIO::Region::NTSC_U:
+        case DiscIO::Region::RGB:
           Config::SetCurrent(Config::SYSCONF_COUNTRY, 0x31);  // United States
           break;
         case DiscIO::Region::PAL:
